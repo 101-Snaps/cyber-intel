@@ -1,0 +1,17 @@
+package com.nicasia.cyberintel;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@SpringBootApplication
+@EnableJpaRepositories(basePackages = "com.nicasia.cyberintel.repository")
+@EntityScan(basePackages = "com.nicasia.cyberintel.model")
+public class CyberIntelApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CyberIntelApplication.class, args);
+    }
+
+}

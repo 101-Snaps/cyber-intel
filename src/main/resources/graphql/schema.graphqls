@@ -1,0 +1,118 @@
+type Query {
+    # Incidents
+    incidents: [Incident!]!
+    incident(id: ID!): Incident
+    incidentsBySeverity(severity: String!): [Incident!]!
+    incidentsByStatus(status: String!): [Incident!]!
+    incidentStats: IncidentStats!
+    searchIncidents(query: String!): [Incident!]!
+
+    # Threats
+    threats: [Threat!]!
+    threat(id: ID!): Threat
+    threatsByRiskLevel(riskLevel: String!): [Threat!]!
+    threatStats: ThreatStats!
+    searchThreats(query: String!): [Threat!]!
+
+    # Dashboard
+    dashboardSummary: DashboardSummary!
+
+    # AI Predictions
+    aiPredictions: [AiIncidentPrediction!]!
+}
+
+type Mutation {
+    # Incidents
+    createIncident(input: IncidentInput!): Incident!
+    updateIncident(id: ID!, input: IncidentInput!): Incident!
+    deleteIncident(id: ID!): Boolean!
+
+    # Threats
+    createThreat(input: ThreatInput!): Threat!
+    updateThreat(id: ID!, input: ThreatInput!): Threat!
+    deleteThreat(id: ID!): Boolean!
+
+    # Alerts
+    markAlertRead(id: ID!): Boolean!
+}
+
+type Incident {
+    id: ID!
+    title: String!
+    description: String
+    severity: String!
+    type: String!
+    status: String!
+    affectedSystem: String
+    reportedBy: String
+    aiRiskLevel: String
+    createdAt: String
+    resolvedAt: String
+}
+
+type Threat {
+    id: ID!
+    name: String!
+    category: String!
+    riskLevel: String
+    description: String
+    status: String!
+    source: String
+    aiConfidence: Float
+    detectedAt: String
+}
+
+type IncidentStats {
+    total: Int!
+    open: Int!
+    inProgress: Int!
+    resolved: Int!
+    critical: Int!
+    high: Int!
+}
+
+type ThreatStats {
+    total: Int!
+    active: Int!
+    contained: Int!
+    critical: Int!
+    high: Int!
+}
+
+type DashboardSummary {
+    totalIncidents: Int!
+    openIncidents: Int!
+    criticalIncidents: Int!
+    totalThreats: Int!
+    activeThreats: Int!
+    criticalThreats: Int!
+    unreadAlerts: Int!
+}
+
+type AiIncidentPrediction {
+    incidentId: ID!
+    title: String!
+    predictedSeverity: String!
+    riskScore: Int!
+    confidence: Float!
+    recommendation: String!
+}
+
+input IncidentInput {
+    title: String!
+    description: String
+    severity: String!
+    type: String!
+    status: String
+    affectedSystem: String
+    reportedBy: String
+}
+
+input ThreatInput {
+    name: String!
+    category: String!
+    riskLevel: String
+    description: String
+    status: String
+    source: String
+}

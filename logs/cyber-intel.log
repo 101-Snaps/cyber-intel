@@ -1,0 +1,38 @@
+2026-04-18T00:51:00.471+02:00  WARN 24844 --- [cyber-intel] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h51m29s111ms313µs500ns).
+2026-04-18T06:53:21.991+02:00  WARN 24844 --- [cyber-intel] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h2m21s519ms348µs).
+2026-04-18T07:12:07.148+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:12:21.913+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-6] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:12:36.915+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-3] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:12:51.923+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:13:06.916+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-3] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:13:21.910+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-4] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:13:36.910+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-3] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:13:52.089+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-4] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:14:07.088+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-10] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:14:22.091+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-1] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:14:37.092+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-2] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:15:40.110+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-1] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:16:40.123+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-3] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:17:40.123+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:18:40.116+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-6] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:19:40.101+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:20:40.107+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:21:40.120+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-6] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:22:40.103+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:23:40.115+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-2] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:24:40.146+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-8] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:25:40.117+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-6] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:26:40.134+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-8] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:27:40.112+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-8] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:28:04.910+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-7] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:28:19.924+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-2] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:28:50.206+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-9] c.n.c.service.SecurityMonitorService     : [FAILED] makhafola.prj@gmail.com - LOGIN /api/auth/login - IP: 0:0:0:0:0:0:0:1 - Incorrect password. Please try again.
+2026-04-18T07:29:54.044+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.c.service.SecurityMonitorService     : [FAILED] makhafola.101snaps@gmail.com - REGISTER /api/auth/register - IP: 0:0:0:0:0:0:0:1 - Email already exists
+2026-04-18T07:30:26.419+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-8] c.n.c.service.SecurityMonitorService     : [SUCCESS] makhafola.khafo@gmail.com - LOGIN /api/auth/login - IP: 0:0:0:0:0:0:0:1 - Login successful
+2026-04-18T07:30:26.517+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-9] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:30:41.454+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-4] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:30:56.450+02:00 DEBUG 24844 --- [cyber-intel] [http-nio-8081-exec-7] c.n.cyberintel.service.IncidentService   : Fetching all incidents
+2026-04-18T07:31:39.144+02:00  WARN 24844 --- [cyber-intel] [http-nio-8081-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-04-18T07:31:39.153+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-5] c.n.c.service.SecurityMonitorService     : [FAILED] makhafola.101snaps@gmail.com - LOGIN /api/auth/login - IP: 0:0:0:0:0:0:0:1 - Incorrect password. Please try again.
+2026-04-18T07:32:35.407+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-10] c.n.c.service.SecurityMonitorService     : [SUCCESS] makhafola.snaps@gmail.com - REGISTER /api/auth/register - IP: 0:0:0:0:0:0:0:1 - New user registered
+2026-04-18T07:32:54.982+02:00  INFO 24844 --- [cyber-intel] [http-nio-8081-exec-4] c.n.c.service.SecurityMonitorService     : [SUCCESS] makhafola.snaps@gmail.com - LOGIN /api/auth/login - IP: 0:0:0:0:0:0:0:1 - Login successful
