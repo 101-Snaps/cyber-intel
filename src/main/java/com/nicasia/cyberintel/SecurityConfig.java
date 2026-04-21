@@ -1,13 +1,13 @@
 package com.nicasia.cyberintel;
 
 import com.nicasia.cyberintel.filter.JwtFilter;
-import com.nicasia.cyberintel.service.UserService;          // ADD
+import com.nicasia.cyberintel.service.UserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;  // ADD
-import org.springframework.security.authentication.AuthenticationProvider; // ADD
-import org.springframework.security.authentication.dao.DaoAuthenticationProvider; // ADD
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration; // ADD
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -22,11 +22,11 @@ import java.util.List;
 public class SecurityConfig {
 
     private final JwtFilter jwtFilter;
-    private final UserService userService;  // ADD
+    private final UserService userService;
 
-    public SecurityConfig(JwtFilter jwtFilter, UserService userService) {  // ADD
+    public SecurityConfig(JwtFilter jwtFilter, UserService userService) {
         this.jwtFilter = jwtFilter;
-        this.userService = userService;  // ADD
+        this.userService = userService;
     }
 
     @Bean
@@ -34,7 +34,6 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-    // ADD THIS — wires UserService + PasswordEncoder into Spring Security
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
@@ -43,7 +42,6 @@ public class SecurityConfig {
         return provider;
     }
 
-    // ADD THIS — exposes AuthenticationManager for use in controllers if needed
     @Bean
     public AuthenticationManager authenticationManager(
             AuthenticationConfiguration config) throws Exception {
@@ -71,10 +69,9 @@ public class SecurityConfig {
         http
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(csrf -> csrf.disable())
-            .authenticationProvider(authenticationProvider())  // ADD THIS LINE
+            .authenticationProvider(authenticationProvider())
             .authorizeHttpRequests(auth -> auth
-                // FIX: update this to match your actual controller path
-                .requestMatchers("/api/users/register", "/api/users/login").permitAll()
+                .requestMatchers("/api/auth/register", "/api/auth/login").permitAll()
                 .requestMatchers("/graphql", "/graphiql", "/graphiql/**").permitAll()
                 .requestMatchers("/api/admin/**").hasAnyRole("STAFF", "ADMIN")
                 .requestMatchers("/api/incidents/**").hasAnyRole("STAFF", "ADMIN")
