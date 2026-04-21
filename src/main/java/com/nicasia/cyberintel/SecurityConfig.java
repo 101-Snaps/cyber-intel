@@ -33,8 +33,9 @@ public class SecurityConfig {
         CorsConfiguration config = new CorsConfiguration();
         // FIX: Allow both 4200 and 4201 — Angular uses 4201 when 4200 is busy.
         config.setAllowedOrigins(List.of(
-            "http://localhost:4201",
-            "https://101-snaps.github.io/Nicasia-Holdings/" 
+           "http://localhost:4200",
+           "http://localhost:4201",
+            "https://101-snaps.github.io"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
