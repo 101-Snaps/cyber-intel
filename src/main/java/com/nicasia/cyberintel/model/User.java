@@ -5,6 +5,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 import java.time.LocalDateTime;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "users", indexes = {
@@ -39,8 +40,9 @@ public class User {
     private LocalDateTime lastLogin;
     private LocalDateTime createdAt;
 
-    @Transient
-    private String staffCode;
+   @Transient
+@JsonProperty("staffCode")
+private String staffCode;
 
     @PrePersist
     public void prePersist() {
