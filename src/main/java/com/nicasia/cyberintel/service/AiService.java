@@ -11,7 +11,7 @@ import java.util.Map;
 public class AiService {
 
     private static final Logger logger = LoggerFactory.getLogger(AiService.class);
-    private static final String AI_URL = "https://nicasia-ai.onrender.com/predict-threat";
+    private static final String AI_URL = "https://ai-services-nkbg.onrender.com/predict-threat";
 
     private final RestTemplate restTemplate = new RestTemplate();
 
