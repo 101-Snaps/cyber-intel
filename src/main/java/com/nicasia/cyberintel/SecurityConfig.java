@@ -54,6 +54,7 @@ public class SecurityConfig {
         config.setAllowedOrigins(List.of(
             "http://localhost:4200",
             "http://localhost:4201",
+            "https://101-snaps.github.io",
             "https://101-Snaps.github.io"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
