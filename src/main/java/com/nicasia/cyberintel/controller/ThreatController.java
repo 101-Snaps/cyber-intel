@@ -12,7 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/threats")
-@CrossOrigin(origins = "https://101-Snaps.github.io")
 public class ThreatController {
 
     private final ThreatService threatService;
@@ -75,3 +74,4 @@ public class ThreatController {
         return ResponseEntity.ok(threatRepository.countGroupByRiskLevel());
     }
 }
+
