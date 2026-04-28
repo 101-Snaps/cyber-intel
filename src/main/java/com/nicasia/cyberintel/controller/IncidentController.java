@@ -12,7 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/incidents")
-@CrossOrigin(origins = "https://101-Snaps.github.io")
 public class IncidentController {
 
     private final IncidentService incidentService;
@@ -80,3 +79,4 @@ public class IncidentController {
         return ResponseEntity.ok(incidentRepository.countGroupByType());
     }
 }
+
