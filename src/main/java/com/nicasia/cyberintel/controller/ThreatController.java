@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/threats")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://101-Snaps.github.io")
 public class ThreatController {
 
     private final ThreatService threatService;
